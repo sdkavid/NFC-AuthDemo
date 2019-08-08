@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".MainActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Successfully authenticated!"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+        <View
+            android:id="@+id/topBorder"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/textColor"
+            app:layout_constraintTop_toBottomOf="@+id/success" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/uniqlo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topBorder" />
+
+        <View
+            android:id="@+id/bottomBorder"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/textColor"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <View
+            android:id="@+id/leftMargin"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottomBorder" />
+
+        <View
+            android:id="@+id/rightMargin"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottomBorder" />
+
+        <TextView
+            android:id="@+id/tagTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tag information:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/bottomBorder" />
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Uniqlo Co. Ltd."
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/tagTitle" />
+
+        <TextView
+            android:id="@+id/season"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2018 CAMPAIGN - KAWS X SESAME STREET"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/brand" />
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MEN KAWS X SESAME STREET GRAPHIC T-SHIRT"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/season" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Produced: 06-29-2018"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/item" />
+
+        <TextView
+            android:id="@+id/serial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SN: 341-412757(82-15)"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/serial2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="04-34-8N501C"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/serial" />
+
+        <TextView
+            android:id="@+id/serial3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1036-00FA-16F"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/serial2" />
+
+        <TextView
+            android:id="@+id/serial4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RN139864"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/serial3" />
+
+        <View
+            android:id="@+id/additionalBorder"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/textColor"
+            app:layout_constraintTop_toBottomOf="@+id/serial4" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Additional product information:"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/additionalBorder" />
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/kawsxsesame"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Collaboration between KAWS, the innovative artist who continues to captivate fans worldwide with his elegant and witty collections, and Sesame Street. Enjoy the playful graphic designs featuring characters like Elmo and Cookie Monster. "
+            android:textColor="@color/textColor"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/productImage" />
+
+        <TextView
+            android:id="@+id/madeOf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="100% Cotton, Exclusive of Ornamentation"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+        <TextView
+            android:id="@+id/wash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Machine wash cold"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/madeOf" />
+
+        <TextView
+            android:id="@+id/madeIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Made in China"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@+id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@+id/wash" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

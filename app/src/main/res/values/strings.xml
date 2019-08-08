@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NFCauth-demo</string>
+    <string name="error"></string>
+</resources>
